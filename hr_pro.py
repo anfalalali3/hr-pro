@@ -11,6 +11,7 @@ def show_options(options):
     print()
 
 def get_user_option():
+    options = get_options()
     show_options(options)
     choose = input("What would you like to do?")
     return choose
@@ -61,7 +62,7 @@ def main():
     
     name = employee.append(input(f"whats your name?{name}"))
     age = employee.append(input(f"whats your age?{age}"))
-    salary = employee.append(input(f"How much your salary?{salary}"))
+    salary = employee.append(int(input(f"How much your salary?{salary}")))
     print(f"Bonus percentage:{get_bonus()}")
     
     name = manager.append(input(f"whats your name?{name}"))
